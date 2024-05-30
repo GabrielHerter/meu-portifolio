@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Entre em contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contato-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap">
+    <link rel="icon" href="imagens/contato_icon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+
+<body>
+    <div class="corpo-pagina">
+            <div class="logo">
+                <h1>gbh//</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" target="_blank">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre_mim.html" target="_blank">Sobre</a>
+                        
+                    </li>
+                    <li>
+                        <a href="projetos.html" target="_blank">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        <section>
+            <h2>Me envie uma mensagem!</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome:</label>
+                <input id="in_nome" type="text" name="name" placeholder="Digite seu nome" autocomplete="o" required>
+                <label>Email:</label>
+                <input id="in_email" type="email" name="email" placeholder="Digite seu email" required>
+                <label>Mensagem:</label>
+                <textarea id="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem"
+                    required></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="71c386e7-85e1-4376-8e20-60bbc79236b2">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato_enviado.html">
+            </form>
+        </section>
+        
+    </div>
+</body>
+
+</html>

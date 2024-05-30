@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(1, 1, 24);
+    color: white;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.corpo-pagina{
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "logo nav nav"
+    "conteudo conteudo conteudo"
+    "conteudo conteudo conteudo"
+    ;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+}
+
+.corpo-pagina > .logo{
+    grid-area: logo;
+}
+
+.corpo-pagina > nav{
+    grid-area: nav;
+}
+
+.corpo-pagina > .conteudo{
+    grid-area: conteudo;
+    background-color: rgb(1, 1, 15);
+}
+
+.corpo-pagina > footer{
+    grid-area: rodape;
+}
+
+.logo h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Lugrasimo", cursive;
+    font-weight: 500;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding-right: 1000px;
+    padding-left: 0px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+.conteudo img{
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    display: block;
+}
+
+h1{
+    
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+@media screen and (max-width: 650px){
+    .conteudo img{
+        width: 400px;
+    }
+}
